@@ -1,6 +1,6 @@
 package com.pluralsight;
 
-public class Assets {
+public abstract class Assets {
     // my properties for my parent class, as of now I made them protected.
     protected String description, dateAcquired;
     protected double originalCost;
@@ -13,10 +13,9 @@ public class Assets {
 
     }
 
-    // method(s)
-    public double getValue() {
-        return originalCost;
-    }
+    // method(s) ~ made this an abstract method, only needs to be done in the parent class.
+    public abstract double getValue();
+
 
     // getters and setters
     public String getDescription() {
